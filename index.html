@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/dollar.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Donate</title>
+</head>
+<style>
+    body {
+        background-image: url("https://media-exp1.licdn.com/dms/image/C4D1BAQFGZRBDZbldqA/company-background_10000/0/1581452811949?e=2159024400&v=beta&t=OcbdstpLI1B5tJuZK7vrFvG_-fdcNmXf-2DnLTIA0rc");
+        background-size: cover;
+        color: #fff;
+        height: 90vh;
+    }
+    #nav li{
+        display: inline;
+        position: absolute;
+        left:68%;
+        bottom:590px; 
+        color: black;
+        font-size: 25px;
+        font-weight: 800;
+
+    }
+
+    #nav li ul {
+        display: inline;
+        text-decoration: none;
+    }
+    #nav a{
+        text-decoration: none;
+        color: black;
+    }
+    #sparks a  {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        position: absolute;
+        bottom:550px;  
+     
+    }
+    #sparks a:hover  {
+        color: rgb(39, 38, 38);
+    }
+
+    h2 {
+        font-size: 50px;
+        font-family: cursive;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .wrapper p{
+        font-size: 30px;
+        font-family: cursive;
+    }
+
+    .wrapper {
+        margin-top: 170px ;
+        margin-bottom: 150px ;
+        text-align: left;
+        width: 100%;      
+    }
+
+    .btn3 {
+        padding: 15px 100px;
+        margin-top: 80px;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 0;
+        margin-left: auto;
+        font-family: cursive;
+    }
+
+    .btn3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #000;
+        -webkit-transform: scaleX(0.3);
+        transform: scaleX(0.3);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    .btn3:hover::before {
+        opacity: 1;
+        background-color: #edebeb;
+       
+         border-radius: 5px;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        transition: -webkit-transform 0.8s cubic-bezier(0.08, 0.35, 0.13, 1.02),
+            opacity 0.4s;
+        transition: transform 0.8s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
+        color: #000;
+    }.btn3:hover{
+        color: #000;
+    }
+    @media only screen and (min-width: 00px) {
+        .wrapper {
+       
+       text-align: center;
+      
+         
+    }
+    #sparks a  {
+       
+       margin-left: -40vw;  
+
+
+        
+    }}
+
+    @media only screen and (min-width: 900px) {
+        .wrapper {
+       
+       text-align: left;
+       margin-left: 4vw;
+      
+         
+    }
+    #sparks a  {
+        margin-left: 0vw; 
+         
+
+
+        
+    }}
+   
+        
+
+    
+</style>
+<body><nav id="nav">
+    <li>
+        <ul><a href="">Home</a></ul>
+        <ul><a href="paymentPage.html"> Donate</a></ul>
+        <ul><a href=""> About us</a></ul>
+        
+    </li>
+</nav>
+    <div class="wrapper">
+        <div id="sparks"><a href="https://www.thesparksfoundationsingapore.org/"><h3>Sparks</h3></a> </div>
+        <h2>The Sparks Foundation</h2>
+        <p class="msg">Every dollar makes a difference<br> Contribute today to create a better tomorrow.</p>
+        <a href="paymentPage.html" class="btn3">
+            DONATE
+        </a>
+    </div>
+</body>
+</html>
