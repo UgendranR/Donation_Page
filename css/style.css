@@ -425,7 +425,7 @@ input.pay-logo {
     margin-left: 1%;
     font-size: 20px;
     color: #444;
-    width: 100%;
+    width: 120%;
     color: #606060;
     font-size: 15px;
     padding: 8px 0 8px 10px;
@@ -958,6 +958,9 @@ label.checkbox {
 }
 
 @media (max-width: 736px) {
+    body{
+        background-color: #358296;
+    }
     .content {
         width: 64%;
     }

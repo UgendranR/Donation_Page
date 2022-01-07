@@ -8,89 +8,220 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <style>
-    body
-    {
-        background:#f2f2f2;
+    body {
+        background-color: #358296;
     }
 
-    .payment
-	{
-		border:1px solid #f2f2f2;
-		height:280px;
-        border-radius:20px;
-        background:#fff;
-	}
-   .payment_header
-   {
-	   background:rgba(255,102,0,1);
-	   padding:20px;
-       border-radius:20px 20px 0px 0px;
-	   
-   }
+    .container {
+        max-width: 380px;
+        margin: 550px auto;
+        overflow: hidden;
+    }
+
+    .printer-top {
+        z-index: 1;
+        border: 6px solid #666666;
+        height: 6px;
+        border-bottom: 0;
+        border-radius: 6px 6px 0 0;
+        background: #333333;
+    }
+
+    .printer-bottom {
+        z-index: 0;
+        border: 6px solid #666666;
+        height: 6px;
+        border-top: 0;
+        border-radius: 0 0 6px 6px;
+        background: #333333;
+    }
+
+    .paper-container {
+        position: relative;
+        overflow: hidden;
+        height: 467px;
+    }
+
+    .paper {
+        background: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        height: 447px;
+        position: absolute;
+        z-index: 2;
+        margin: 0 12px;
+        margin-top: -12px;
+        animation: print 5000ms cubic-bezier(0.68, -0.55, 0.265, 0.9) infinite;
+        -moz-animation: print 5000ms cubic-bezier(0.68, -0.55, 0.265, 0.9) infinite;
+    }
+
+    .main-contents {
+        margin: 0 12px;
+        padding: 24px;
+    }
+
+
+    .jagged-edge {
+        position: relative;
+        height: 20px;
+        width: 100%;
+        margin-top: -1px;
+    }
+
+    .jagged-edge:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        height: 20px;
+        background: linear-gradient(45deg,
+            transparent 33.333%,
+            #ffffff 33.333%,
+            #ffffff 66.667%,
+            transparent 66.667%),
+            linear-gradient(-45deg,
+            transparent 33.333%,
+            #ffffff 33.333%,
+            #ffffff 66.667%,
+            transparent 66.667%);
+        background-size: 16px 40px;
+        background-position: 0 -20px;
+    }
+
+    .success-icon {
+        text-align: center;
+        font-size: 48px;
+        height: 72px;
+        background: #359d00;
+        border-radius: 50%;
+        width: 72px;
+        height: 72px;
+        margin: 16px auto;
+        color: #fff;
+    }
+
+    .success-title {
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #666;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    .success-description {
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 21px;
+        color: #999;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .order-details {
+        text-align: center;
+        color: #333;
+        font-weight: bold;
+
+    }
+
+    .order-number-label {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .order-number {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        line-height: 48px;
+        font-size: 48px;
+        padding: 8px 0;
+        margin-bottom: 24px;
+    }
+    
+    .complement {
+        font-size: 18px;
+        margin-bottom: 8px;
+        color: #32a852;
+    }
+
    
-   .check
-   {
-	   margin:0px auto;
-	   width:50px;
-	   height:50px;
-	   border-radius:100%;
-	   background:#fff;
-	   text-align:center;
-   }
-   
-   .check i
-   {
-	   vertical-align:middle;
-	   line-height:50px;
-	   font-size:30px;
-   }
+    
+    @keyframes print {
+        0% {
+            transform: translateY(-90%);
+        }
 
-    .content 
-    {
-        text-align:center;
+        100% {
+            transform: translateY(0%);
+        }
     }
 
-    .content  h1
-    {
-        font-size:25px;
-        padding-top:25px;
+    @-webkit-keyframes print {
+        0% {
+            -webkit-transform: translateY(-90%);
+        }
+
+        100% {
+            -webkit-transform: translateY(0%);
+        }
     }
 
-    .content a
-    {
-        width:200px;
-        height:35px;
-        color:#fff;
-        border-radius:30px;
-        padding:5px 10px;
-        background:rgba(255,102,0,1);
-        transition:all ease-in-out 0.3s;
+    @-moz-keyframes print {
+        0% {
+            -moz-transform: translateY(-90%);
+        }
+
+        100% {
+            -moz-transform: translateY(0%);
+        }
     }
 
-    .content a:hover
-    {
-        text-decoration:none;
-        background:#000;
+    @-ms-keyframes print {
+        0% {
+            -ms-transform: translateY(-90%);
+        }
+
+        100% {
+            -ms-transform: translateY(0%);
+        }
+    }
+    @media only screen and (min-width:1000px){
+        .container{
+            margin: 150px auto;
+        }
+        body {
+        background-color: #B68148;
+    }
     }
 </style>
 
 <body>
     <div class="container">
-        <div class="row">
-           <div class="col-md-6 mx-auto mt-5">
-              <div class="payment">
-                 <div class="payment_header">
-                    <div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>
-                 </div>
-                 <div class="content">
-                    <h1>Payment Success !</h1>
-                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. </p>
-                    <a href="index.html">Go to Home</a>
-                 </div>
-                 
-              </div>
-           </div>
+        <div class="printer-top"></div>
+
+        <div class="paper-container">
+            <div class="printer-bottom"></div>
+
+            <div class="paper">
+                <div class="main-contents">
+                    <div class="success-icon">&#10004;</div>
+                    <div class="success-title">
+                        Payment Complete
+                    </div>
+                    <div class="success-description">
+                        Thank you for completing the payment! You will shortly receive an email of your payment.
+                    </div>
+                    <div class="order-details">
+                        <div class="order-number-label">Transaction ID</div>
+                        <div class="order-number">89465484</div>
+                        <div class="complement">Thank You!</div>
+                    </div>
+                </div>
+                <div class="jagged-edge"></div>
+            </div>
         </div>
-     </div>
+    </div>
 </body>
 </html>

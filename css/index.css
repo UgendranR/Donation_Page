@@ -1,0 +1,312 @@
+/*Mobile-View*/
+.volunteer{
+    margin-top: 110px;
+    padding: 25px; 
+    display:grid;
+    place-items: center;
+    border:solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 5px;
+    margin:80px;
+    margin-top: 150px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+.volunteer h3{
+    position: relative;
+
+}
+.volunteer h4{
+    font-weight: 200;
+}
+
+
+
+
+.banner{
+    background-image: url("https://preview.colorlib.com/theme/thecharity/images/xhero.jpg.pagespeed.ic.AOvHHXG-b_.webp");
+    background-size: cover;
+    height: 500px;
+    margin-left: -55px;
+    margin-top: 140px;
+    margin-bottom:0px;
+    opacity: .9;
+    filter: blur(.9px);
+    border-style: solid;
+    border: steelblue;
+    border-width: 10px;
+    border-radius: 10px;
+   
+    
+}
+.moto{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.moto h1{
+    font-size: 78px;
+    font-weight: 600;
+    line-height: 1;
+    font-family: inherit;
+    opacity: 1;
+}
+.moto h4{
+    margin-top:-30px;
+    font-size: 50px;
+    opacity: 1;
+}
+.nav-menu{
+    display: none;
+}
+#sparks .btn1{
+    display: absolute;
+    top:-70px;
+    left:60vw;
+    color:#238fce;   
+    padding: 20px 30px;
+    border: 15px solid #fff;
+    border-radius: 15px;
+    font-family: monospace;
+    font-weight: 400;
+    background-color: white;
+    opacity: 1;
+    text-decoration: none;
+}
+#sparks a{
+    color: #021a29;
+    text-decoration: none;
+    font-size: 50px;
+    position: relative;
+    top:70px;
+    width: 100%; 
+    display: inline;
+    text-decoration: underline;
+   
+
+
+    
+}
+footer{
+    margin-top: 50px;
+    display: float;
+    float: right;
+    font-size: 30px;
+    line-height: .5;
+}
+.wrapper{
+    margin-left:50px;
+}
+.wrapper h2{
+    margin-top: 20%;
+    color: #021a29;
+    font-size: 40px;
+    text-align: center;
+
+}
+.msg{
+    color:white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.btn3{
+    margin-left: 35%;
+    padding: 15px 100px;
+    color: #238fce;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: white;
+    opacity: 1;
+     
+}
+.btn2{
+    margin-left: 20px;
+    padding: 20px 90px;
+    color: #238fce;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border-radius: 25px;
+   
+     
+}
+    
+
+
+body{
+    /*background-image: url("https://media.istockphoto.com/photos/a-person-holding-red-heart-in-hands-donate-and-family-insurance-on-picture-id1164870804?k=20&m=1164870804&s=612x612&w=0&h=v3hoZeVZ2AM4SRBAe6w_UgpZtPXQTExDpOCt6Tfr5_A=");*/
+    background-color: #358296;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    color: white;
+}
+
+
+
+
+
+@media only screen and (min-width:1000px){
+    #sparks .btn1{
+        display: none;
+    }
+    .hamburger,.bar {
+        display: none;
+    }
+    .volunteer{
+        display: none;
+    }
+    body {
+        background-image: url("https://media-exp1.licdn.com/dms/image/C4D1BAQFGZRBDZbldqA/company-background_10000/0/1581452811949?e=2159024400&v=beta&t=OcbdstpLI1B5tJuZK7vrFvG_-fdcNmXf-2DnLTIA0rc");
+        background-size: cover;
+        color: #fff;
+        height: 90vh;
+    }
+    .nav-menu{
+        display: inline;
+        position: absolute;
+        left:63%;
+        top: 30px;
+        color: black;
+        font-size: 25px;
+        font-weight: 800;
+        background-color:transparent;
+    
+    
+    }.banner{
+        display:none;
+    }
+    
+    .nav-menu .nav-item{
+        display:inline;
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .nav-item a{
+        text-decoration: none;
+        color: black;
+    }
+    .nav-item a:hover{
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    #sparks a  {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        position: absolute;
+        top:20px;
+        
+    
+    }
+    #sparks a:hover  {
+        color: rgb(39, 38, 38);
+    }
+    
+    h2 {
+        font-size: 50px;
+        font-family: cursive;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        color: white;
+        text-align: left;
+    }
+    .wrapper p{
+        font-size: 30px;
+        font-family: cursive;
+        text-align: left;
+    }
+    
+    .wrapper {
+        margin-top: 180px ;
+        margin-bottom: 150px ;
+        text-align: left;
+        width: 100%;
+        margin-left: 50px;
+    }
+    .wrapper h2{
+        margin-top: 0px;
+        margin-left: 0px;
+        text-align: left;
+    }
+    
+    .btn3 {
+        background-color: transparent;
+        padding: 15px 100px;
+        margin-top: 80px;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        background-color: none;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 0;
+        margin-left: auto;
+        font-family: cursive;
+    }
+    
+    .btn3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #000;
+        -webkit-transform: scaleX(0.3);
+        transform: scaleX(0.3);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    
+    .btn3:hover::before {
+        opacity: 1;
+        background-color: #edebeb;
+    
+         border-radius: 5px;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        transition: -webkit-transform 0.8s cubic-bezier(0.08, 0.35, 0.13, 1.02),
+            opacity 0.4s;
+        transition: transform 0.8s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
+        color: #000;
+    }
+    .btn3:hover{
+        color: #000;
+    }
+    .wrapper h2{
+        color: white;
+    }footer{
+        margin-top: 50px;
+        display: block;
+        float: left;
+        font-size: 30px;
+        line-height: .5;
+    }
+    
+
+} 
+
+
