@@ -371,7 +371,7 @@ li.resp-tab-item.resp-tab-active span label {
     font-weight: 600;
     border: 1px solid #e7ebee;
     outline: none;
-    color: #ccc;
+    color: rgb(66, 64, 64);
     border-radius: 5px;
     margin-bottom: 20px;
     transition: 0.5s all;
@@ -424,9 +424,9 @@ input.pay-logo {
     outline: none;
     margin-left: 1%;
     font-size: 20px;
-    color: #444;
+    color: rgb(43, 41, 41);
     width: 120%;
-    color: #606060;
+    color: #333232;
     font-size: 15px;
     padding: 8px 0 8px 10px;
     border: none;
@@ -456,7 +456,7 @@ input.text_box {
     font-weight: 600;
     border: 1px solid #e7ebee;
     outline: none;
-    color: #ccc;
+    color: rgb(49, 48, 48);
     border-radius: 5px;
     margin-bottom: 30px;
     transition: 0.5s all;
@@ -746,7 +746,7 @@ label.checkbox {
     font-weight: bold;
     border: 1px solid #ebeced;
     outline: none;
-    color: #D7D7D7;
+    color: #383636;
 }
 
 .user-login form {
