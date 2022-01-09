@@ -213,6 +213,7 @@ body{
         font-size: 30px;
         position: absolute;
         top:20px;
+        width: unset;
         
     
     }
