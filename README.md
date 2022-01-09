@@ -1,7 +1,7 @@
-# Developer - Ravi Sharma
+# Developer - Ugendran R
 
 # Task
-> Payment Gateway Integration - https://ravigithub19.github.io/payment_gateway_integration/
+> Payment Gateway Integration - https://github.com/UgendranR/Donation_Page
 
 ## Table of contents
 * Homepage
