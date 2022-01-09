@@ -14,9 +14,9 @@
 ## Screenshots
 ![Example screenshot](./images/Homepage.JPG)<br>
 
-![Example screenshot](./img/paymentPage.png)<br>
+![Example screenshot](./images/pay.JPG)<br>
 
-![Example screenshot](./img/paymentSuccess.png)
+![Example screenshot](./images/s.JPG)
 
 ## Technologies
 * HTML5
